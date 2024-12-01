@@ -6,8 +6,8 @@ const gridSizeSelect = document.getElementById('gridSize');
 
 function reloadRandom() {
   const gridSize = parseInt(gridSizeSelect.value, 10);
-  gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
-  gridContainer.innerHTML = '';
+  gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`; // Set the grid column layout dynamically
+  gridContainer.innerHTML = ''; // Clear previous tiles
   const totalTiles = gridSize * gridSize;
 
   for (let i = 0; i < totalTiles; i++) {
@@ -25,7 +25,7 @@ function loadPreset() {
     [1, 2, 1, 2],
     [4, 3, 4, 3],
   ];
-  gridContainer.style.gridTemplateColumns = `repeat(4, 1fr)`;
+  gridContainer.style.gridTemplateColumns = `repeat(4, 1fr)`; // Fix for preset layout
   gridContainer.innerHTML = '';
 
   preset.forEach(row => {
