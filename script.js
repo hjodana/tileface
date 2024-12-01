@@ -37,6 +37,16 @@ function loadPreset() {
     [1, 2, 1, 2, 1],
   ];
   }
+  if (gridSize == 6) {
+  preset = [
+    [1, 2, 1, 2, 1. 2],
+    [4, 3, 4, 3, 4, 3],
+    [1, 2, 1, 2, 1. 2],
+    [4, 3, 4, 3, 4, 3],
+    [1, 2, 1, 2, 1. 2],
+    [4, 3, 4, 3, 4, 3],
+  ];
+  }
   gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`; // Fix for preset layout
   gridContainer.innerHTML = '';
 
