@@ -34,7 +34,7 @@ function loadPreset() {
     row.forEach(index => {
       const img = document.createElement('img');
       //img.src = `tile0${index}.jpg`;
-      img.src = imageList[index]
+      img.src = imageList[index-1]
       alert(img.src)
       gridContainer.appendChild(img);
     });
