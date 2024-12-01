@@ -33,7 +33,8 @@ function loadPreset() {
   preset.forEach(row => {
     row.forEach(index => {
       const img = document.createElement('img');
-      img.src = `tile0${index}.jpg`;
+      //img.src = `tile0${index}.jpg`;
+      img.src = imageList[index]
       gridContainer.appendChild(img);
     });
   });
