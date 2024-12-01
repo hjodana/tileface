@@ -2,10 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
 }
-
 .grid {
   display: grid;
   gap: 5px;
+  grid-template-columns: repeat(4, 1fr); /* Default grid is 4x4 */
 }
 
 .grid img {
@@ -13,6 +13,7 @@ body {
   height: auto;
   object-fit: cover;
 }
+
 
 .buttons {
   margin-bottom: 10px;
