@@ -48,7 +48,7 @@ function updateImageList() {
     img.src = image;
 
     const removeButton = document.createElement('button');
-    removeButton.textContent = 'Remove';
+    removeButton.textContent = 'Remove' + img.src
     removeButton.onclick = () => {
       imageList.splice(index, 1);
       updateImageList();
