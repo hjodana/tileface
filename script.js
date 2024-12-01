@@ -39,7 +39,7 @@ function loadPreset() {
   }
   if (gridSize == 6) {
   preset = [
-    [1, 2, 1, 2, 1. 2],
+    [1, 2, 1, 2, 1, 2],
     [4, 3, 4, 3, 4, 3],
     [1, 2, 1, 2, 1. 2],
     [4, 3, 4, 3, 4, 3],
@@ -47,8 +47,8 @@ function loadPreset() {
     [4, 3, 4, 3, 4, 3],
   ];
   }
-  //gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`; // Fix for preset layout
-    gridContainer.style.gridTemplateColumns = `repeat(4, 1fr)`; // Fix for preset layout
+  gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`; // Fix for preset layout
+    //gridContainer.style.gridTemplateColumns = `repeat(4, 1fr)`; // Fix for preset layout
 gridContainer.innerHTML = '';
 
   preset.forEach(row => {
