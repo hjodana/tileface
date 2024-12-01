@@ -28,7 +28,7 @@ function loadPreset() {
     [1, 2, 1, 2],
     [4, 3, 4, 3],
   ];
-  if (gridsize == 5) {
+  if (gridSize == 5) {
   preset = [
     [1, 2, 1, 2, 1],
     [4, 3, 4, 3, 4],
