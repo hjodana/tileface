@@ -7,6 +7,8 @@ const gridSizeSelect = document.getElementById('gridSize');
 function reloadRandom() {
   const gridSize = parseInt(gridSizeSelect.value, 10);
   gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`; // Set the grid column layout dynamically
+  gridContainer.style.width = `${gridSize*100}px`;
+  gridContainer.style.height= `${gridSize*100}px`;
   gridContainer.innerHTML = ''; // Clear previous tiles
   const totalTiles = gridSize * gridSize;
 

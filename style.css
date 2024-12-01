@@ -2,18 +2,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
 }
+
 .grid {
+  width: 600px;
+  height: 600px;
   display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(4, 1fr); /* Default grid is 4x4 */
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr); /* Default 4x4 layout */
 }
 
 .grid img {
-  width: 100%;
-  height: auto;
+  width: 100px; /* Restrict to 100px */
+  height: 100px; /* Restrict to 100px */
   object-fit: cover;
 }
-
 
 .buttons {
   margin-bottom: 10px;
@@ -27,15 +29,23 @@ body {
 
 .image-list {
   margin-top: 20px;
+  display: flex; /* Horizontal layout for image list */
+  overflow-x: auto;
+  align-items: center;
+}
+.image-list div {
+  position: relative;
+  display: inline-block;
 }
 
 .image-list img {
-  width: 50px;
-  height: auto;
-  margin-right: 5px;
-  vertical-align: middle;
+  width: 100; /* Thumbnail size */
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
 .image-list button {
   padding: 5px 10px;
+  margin-left: 5px;
 }
