@@ -22,7 +22,7 @@ function reloadRandom() {
 
 function loadPreset() {
   const gridSize = parseInt(gridSizeSelect.value, 10);
-  const preset = [
+  let preset = [
     [1, 2, 1, 2],
     [4, 3, 4, 3],
     [1, 2, 1, 2],
