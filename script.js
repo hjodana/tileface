@@ -47,7 +47,7 @@ function loadPreset() {
     [4, 3, 4, 3, 4, 3],
   ];
   }
-  gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`; // Fix for preset layout
+  //gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`; // Fix for preset layout
     gridContainer.style.gridTemplateColumns = `repeat(4, 1fr)`; // Fix for preset layout
 gridContainer.innerHTML = '';
 
