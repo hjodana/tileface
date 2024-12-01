@@ -35,7 +35,7 @@ function loadPreset() {
       const img = document.createElement('img');
       //img.src = `tile0${index}.jpg`;
       img.src = imageList[index-1]
-      alert(img.src)
+      //alert(img.src)
       gridContainer.appendChild(img);
     });
   });
@@ -48,7 +48,7 @@ function updateImageList() {
     img.src = image;
 
     const removeButton = document.createElement('button');
-    removeButton.textContent = 'Remove' + img.src
+    removeButton.textContent = 'Remove';
     removeButton.onclick = () => {
       imageList.splice(index, 1);
       updateImageList();
