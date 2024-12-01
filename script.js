@@ -35,6 +35,7 @@ function loadPreset() {
       const img = document.createElement('img');
       //img.src = `tile0${index}.jpg`;
       img.src = imageList[index]
+      alert(img.src)
       gridContainer.appendChild(img);
     });
   });
