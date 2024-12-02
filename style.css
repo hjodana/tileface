@@ -46,6 +46,16 @@ body {
 }
 
 .image-list button {
-  padding: 5px 10px;
-  margin-left: 5px;
+  --padding: 5px 10px;
+  --margin-left: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 0 0 0 4px;
 }

@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tile Grid</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Tile Grid</h1>
-  
-  <div class="buttons">
-    <button onclick="reloadRandom()">Reload Random</button>
-    <button onclick="loadPreset()">Load Preset</button>
-    <label>
-      Grid Size:
-      <select id="gridSize" onchange="reloadRandom()">
-        <option value="4">4x4</option>
-        <option value="5">5x5</option>
-        <option value="6">6x6</option>
-      </select>
-    </label>
-  </div>
-  
-  <div id="gridContainer" class="grid"></div>
-  
-  <div class="image-list">
-    <h3>Image List</h3>
-    <div id="imageList"></div>
-  </div>
-  <hr>
-  <input type="file" id="imageUpload" accept="image/*" onchange="uploadImage()">
-  
-  <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tile Face</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Tile Face</h1>
+
+		<div class="buttons">
+			<button onclick="reloadRandom()">Reload Random</button>
+			<button onclick="loadPreset()">Load Preset</button>
+			<label>
+				Grid Size:
+				<select id="gridSize" onchange="reloadRandom()">
+					<option value="4">4x4</option>
+					<option value="5">5x5</option>
+					<option value="6">6x6</option>
+				</select>
+			</label>
+		</div>
+
+		<div id="gridContainer" class="grid"></div>
+
+		<h3>Image List</h3>
+		<div class="image-list">
+			<div id="imageList"></div>
+		</div>
+		<hr />
+		<input type="file" id="imageUpload" accept="image/*" onchange="uploadImage()" />
+
+		<script src="script.js"></script>
+	</body>
 </html>
